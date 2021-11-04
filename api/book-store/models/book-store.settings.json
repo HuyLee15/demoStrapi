@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_stores",
+  "info": {
+    "name": "Book Store",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bookName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    },
+    "category": {
+      "via": "book_stores",
+      "model": "category"
+    }
+  }
+}

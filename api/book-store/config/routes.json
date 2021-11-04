@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/book-stores",
+      "handler": "book-store.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-stores/count",
+      "handler": "book-store.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-stores/:id",
+      "handler": "book-store.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/book-stores",
+      "handler": "book-store.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/book-stores/:id",
+      "handler": "book-store.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/book-stores/:id",
+      "handler": "book-store.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
